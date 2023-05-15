@@ -40,7 +40,7 @@ bot.add_custom_filter(custom_filters.ChatFilter())
 @bot.message_handler(content_types=['document'])
 def print(message):
     if is_member(message.from_user.id):
-        #bot.send_message(message.chat.id,'You are allowed to print!')
+        #bot.send_message(message.chat.id,'You are allowed to print! ')
         #bot.send_message(message.chat.id,(str)(message.text))
         try:
             file_info = bot.get_file(message.document.file_id)
