@@ -15,7 +15,7 @@ def is_member(telegram_id):
     response = requests.get(url, params=params, headers=headers)
     resp = json.loads(response.text)
 
-    #print(resp)
+    #print(resp)..
 
     if resp != [] and resp[0]['roles_target_id'] == 'member':
         return True
